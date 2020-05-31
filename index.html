@@ -29,27 +29,32 @@
   </div>
   <div class="container-form">
       <form action="">
+        
         <div class="cell">
           <input class="in" id="js-first-name" type="text" placeholder="First Name">
-          <img class="error" src="images/icon-error.svg" alt="">
+          <img class="error" id="js-er-img-first-name" src="images/icon-error.svg" alt="">
         </div>
-        <div class="error-text"><h3>First Name cannot be empty</h3></div>
+        <div class="error-text" id="js-er-text-first-name"><h3>First Name cannot be empty</h3></div>
+        
         <div class="cell">
           <input class="in"id="js-last-name" type="text" placeholder="Last Name">
-          <img class="error" src="images/icon-error.svg" alt="">
+          <img class="error" id="js-er-img-last-name" src="images/icon-error.svg" alt="">
         </div>
-        <div class="error-text"><h3>Last Name cannot be empty</h3></div>
+        <div class="error-text" id="js-er-text-last-name"><h3>Last Name cannot be empty</h3></div>
+        
         <div class="cell">
           <input class="in"id="js-email" type="email" placeholder="Email Address">
-          <img class="error" src="images/icon-error.svg" alt="">          
+          <img class="error" id="js-er-img-email"src="images/icon-error.svg" alt="">          
         </div>
-        <div class="error-text"><h3>Look like this is not an email</h3></div>
+        <div class="error-text" id="js-er-text-email"><h3>Look like this is not an email</h3></div>
+        
         <div class="cell">
           <input class="in"id="js-password" type="password" placeholder="Password">
-          <img class="error" src="images/icon-error.svg" alt="">
+          <img class="error" id="js-er-img-password"src="images/icon-error.svg" alt="">
         </div>
-        <div class="error-text"><h3>Password cannot be empty</h3></div>
-        <div class="cell"><input id="js-sumit" type="submit" value="CLAIM YOUR FREE TRIAL"></div>
+        <div class="error-text" id="js-er-text-password"><h3>Password cannot be empty</h3></div>
+        
+        <div class="cell"><input id="js-submit" type="button" value="CLAIM YOUR FREE TRIAL"></div>
       </form>
       <div class="form-text">
         <p>By clicking the button, you are agreeing to our <span id="">Terms and Services</span></p>
@@ -57,6 +62,6 @@
     </div>
   </div>
 </div> 
- 
+ <script src="script.js"></script>
 </body>
 </html>
