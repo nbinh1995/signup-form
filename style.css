@@ -6,6 +6,7 @@
     --neutral-first-color: hsl(249, 10%, 26%);
     --neutral-second-color: hsl(246, 25%, 77%);
 }
+/*----------------MB-------------------------/
   /*-------------/
  /  Grid System /
 /-------------*/
@@ -47,7 +48,7 @@ body{
     padding: 0 1rem;
 }
   /*-------------/
- /     text     /
+ /  text-left   /
 /-------------*/
 .content-text{
     padding-top: 5rem;
@@ -66,7 +67,7 @@ body{
 }
 
   /*-------------/
- /     form     /
+ /  form-right  /
 /-------------*/
 .container-right{
     text-align: center;
@@ -80,12 +81,12 @@ body{
     color: white;
     text-align: center;
     border-radius: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     box-shadow: 0 10px 6px -6px var(--neutral-first-color);
     outline: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .container-btn .button span{
     opacity: 80%;
@@ -112,17 +113,22 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+.cell{
+    position: relative;
+    padding-bottom: 4rem;
+}
 .container-form form .in{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
     outline: none;
     border-radius: 0.6rem;
     border-color: var(--neutral-second-color);
+    
 }
+
 .container-form form input::placeholder{
     color:var(--neutral-first-color) ;
     font-weight: bold;
@@ -137,35 +143,85 @@ body{
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.cell{
-    position: relative;
-    padding-bottom: 4rem;
+.form-text{
+    margin-top: -4rem;
+    color: var(--neutral-second-color);
+    font-size: 0.8rem;
 }
+.form-text span{
+    color: var(--primary-first-color);
+    font-weight: bold;
+}
+/*status error*/
 .error{
     position: absolute;
     display: none;
     top: 0.8rem;
     right: 1rem;
 }
-
-.form-text{
-    margin-top: -4rem;
-    color: var(--neutral-second-color);
-    font-size: 0.8 rem;
-}
-.form-text span{
-    color: var(--primary-first-color);
-    font-weight: bold;
+.error-text{
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    display: none;
+    color: red;
+    opacity: 70%;
+    font-size: 0.6rem;
+    text-align: right;
 }
   /*-------------/
  / MediaQuery   /
 /-------------*/
 
-@media screen and (min-width: 768px) {
-.col-mb-1-2{
+@media screen and (min-width: 1000px) {
+/*---------------PC-----------------*/
+  /*-------------/
+ /  Grid System /
+/-------------*/
+.col-pc-1-2{
 width: 50%;
 }
-.col-mb-2-2{
+.col-pc-2-2{
 width: 100%;
 }
-  }
+.wrap-mb{
+    max-width:90rem;
+    min-width: 48rem;
+    max-height:50.63rem;
+    min-height: 27rem;
+    margin: 0 auto;
+}
+  /*-------------/
+ /     Body     /
+/-------------*/
+.container{
+    background-image: url('images/bg-intro-desktop.png');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem;
+    display: flex;
+}
+  /*-------------/
+ /  text-left   /
+/-------------*/
+.content-text{
+    padding: 10rem 2rem 10rem 1rem;
+    text-align: left;
+    color: white;
+}
+.content-text h1{
+    padding: 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.content-text p{
+    opacity: 80%;
+    padding: 0;
+    font-size: 1.2rem;
+}
+  /*-------------/
+ /  form-right  /
+/-------------*/
+.container-right{
+    padding: 0 3rem;
+}
+}
